@@ -25,7 +25,7 @@ def csv_from_excel(fn, on):
 i = 0
 for file in listdir("."):
    print 'entro '+file
-   if os.path.splitext(file)[1] != '':
+   if os.path.splitext(file)[1] == '.xls':
       print 'a crear'
       csv_from_excel(file, os.path.splitext(file)[0])
    i = i+1
