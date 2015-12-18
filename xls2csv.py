@@ -8,7 +8,7 @@ import os
 
 directory = 'csv'
 def csv_from_excel(fn, on):
-   wb = xlrd.open_workbook(fn)
+   wb = xlrd.open_workbook(fn, encoding_override='utf_8')
    sh = wb.sheet_by_index(0)
    if not os.path.exists(directory):
       os.makedirs(directory)
