@@ -1,0 +1,9 @@
+mysetupfile.py #nombre del archivo
+
+from distutils.core import setup 
+import py2exe
+setup(console=['mycode.py'])
+
+c:\Python> Python mysetupfile.py py2exe
+c:\Python> cd dist  #directorio de archivo compilado
+Prueba la compilación ejecutando el programa: c:\Python> mycode.exe
